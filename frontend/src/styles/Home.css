@@ -1,12 +1,44 @@
 .home-container {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 10px;
-  background-image:linear-gradient(#4a0000d2, #0B0000);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.788)),
+    url("../assets/bg.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
   font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+}
+
+.home-image {
+  margin-top: 40px;      /* optional spacing */
+}
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.home-image {
+  margin: auto;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Navbar */
 .navbar {

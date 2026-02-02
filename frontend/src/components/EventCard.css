@@ -1,0 +1,54 @@
+.event-card {
+  width: 260px;
+  background: rgba(20, 0, 0, 0.9);
+  border-radius: 20px;
+  padding: 16px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-image-wrapper {
+  width: 100%;
+  height: 260px;          /* SAME height for all cards */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* 🔥 KEY LINE */
+}
+
+
+.event-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.event-content h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.event-content p {
+  color: #ff4d4d;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 6px 10px;
+}

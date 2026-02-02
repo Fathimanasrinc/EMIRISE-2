@@ -1,0 +1,25 @@
+.divider-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* Base divider */
+.divider-line {
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 25%,
+    #ffffff 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 100%
+  );
+  transition: width 1s ease-in-out;
+}
+
+/* When visible */
+.divider-line.animate {
+  width: 320px;
+}

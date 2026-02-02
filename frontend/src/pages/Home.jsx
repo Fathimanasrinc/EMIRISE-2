@@ -1,9 +1,15 @@
 import React from "react";
+import PopIn from "../components/PopIn"; // adjust path if needed
 import "../styles/Home.css";
+import EMIRISE from "../assets/EMIRISE.png";
+import Footersection from "../components/Footersection";
+import AnimatedDivider from "../components/AnimatedDivider";
+import Countdown from "../components/Countdown";
+import Events from "../components/Events";
+import About from "../components/About";
 
 const Home = () => {
   return (
-
     <div className="home-container">
       
       {/* Navbar */}
@@ -15,18 +21,19 @@ const Home = () => {
         </ul>
       </nav>
 
-      {/* Hero Section */}
-      <div className="hero">
-        <h1 className="title">EMIRISE 2.0</h1>
-
-        <div className="date-box">
-          <div className="dates">
-            <span>9</span>
-            <span>10</span>
-          </div>
-          <p>FEBRUARY 2025 · SUNDAY, MONDAY</p>
-        </div>
-      </div>
+      {/* Image with pop-in animation */}
+      <PopIn delay={200}>
+        <img
+          src={EMIRISE}   // your image path
+          alt="Home"
+          className="home-image"
+        />
+      </PopIn>
+      <Footersection/>
+      <Countdown/>
+      <AnimatedDivider/>
+      <Events/>
+      <About/>
 
     </div>
   );
