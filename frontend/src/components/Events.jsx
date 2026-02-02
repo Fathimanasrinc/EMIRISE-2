@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import EventCard from "./EventCard";
-import EventModal from "./EventModal";
 import PopIn from "./PopIn"; // 👈 add this
 import "./event.css";
-
 
 import ideathonImg from "../assets/ideathonhd.png";
 import workshopImg from "../assets/bestmanagerhd.png";
@@ -15,23 +13,25 @@ const eventsData = [
     title: "BIZ VANGUARD",
     subtitle: "Ideathon",
     image: ideathonImg,
+    route: "/biz-vanguard",
   },
   {
     id: 2,
-    title: "BIZ VANGUARD",
-    subtitle: "Best Manager",
+    title: "STARTUP STORM",
+    subtitle: "Workshop",
     image: workshopImg,
+    route: "/best-manager",
   },
   {
     id: 3,
-    title: "BIZ VANGUARD",
-    subtitle: "Escape Room",
+    title: "FOUNDERS TALK",
+    subtitle: "Panel Discussion",
     image: panelImg,
+    route: "/escape-room",
   },
 ];
 
 const Events = () => {
-  const [selectedEvent, setSelectedEvent] = useState(null);
 
   return (
     <>
@@ -48,17 +48,13 @@ const Events = () => {
               image={event.image}
               title={event.title}
               subtitle={event.subtitle}
-              onClick={() => setSelectedEvent(event)}
+              route={event.route}
             />
           </PopIn>
         ))}
       </div>
-
-      
     </>
   );
 };
 
 export default Events;
-
-

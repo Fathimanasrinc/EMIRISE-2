@@ -1,0 +1,8 @@
+[33m6f1605a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32m5e25fff[m[33m)[m HEAD@{0}: checkout: moving from 5e25fff to main
+[33m6f1605a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32m5e25fff[m[33m)[m HEAD@{1}: checkout: moving from main to 5e25fff
+[33m6f1605a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32m5e25fff[m[33m)[m HEAD@{2}: pull: Merge made by the 'ort' strategy.
+[33m5e25fff[m HEAD@{3}: commit: home page created
+[33m503b741[m HEAD@{4}: reset: moving to HEAD
+[33m503b741[m HEAD@{5}: commit: home page created
+[33m38f8797[m HEAD@{6}: Branch: renamed refs/heads/main to refs/heads/main
+[33m38f8797[m HEAD@{8}: commit (initial): first commit
