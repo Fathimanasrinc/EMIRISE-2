@@ -7,7 +7,7 @@ const EventCard = ({ image, title, subtitle, route }) => {
 
   return (
     <div className="event-card">
-      
+
       <div className="event-image-wrapper">
         <img src={image} alt={title} className="event-image" />
       </div>
@@ -19,14 +19,14 @@ const EventCard = ({ image, title, subtitle, route }) => {
 
       {/* Arrow click only */}
       <div
-  className="arrow"
-  onClick={(e) => {
-    e.stopPropagation();
-    navigate(route);
-  }}
->
-  ➜
-</div>
+        className="arrow"
+        onClick={(e) => {
+          e.stopPropagation();
+          navigate(route);
+        }}
+      >
+        ➜
+      </div>
 
 
     </div>

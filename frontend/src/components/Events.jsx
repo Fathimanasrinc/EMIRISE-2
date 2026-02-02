@@ -3,9 +3,10 @@ import EventCard from "./EventCard";
 import PopIn from "./PopIn"; // 👈 add this
 import "./event.css";
 
-import ideathonImg from "../assets/ideathonhdhd.png";
+import ideathonImg from "../assets/ideathonhd1.png";
 import workshopImg from "../assets/bestmanagerhd.png";
 import panelImg from "../assets/escaperoobatmanhd.png";
+import bizvanguard from "../assets/batbizHd.png";
 
 const eventsData = [
   {
@@ -13,25 +14,38 @@ const eventsData = [
     title: "BIZ VANGUARD",
     subtitle: "Ideathon",
     image: ideathonImg,
-    route: "/biz-vanguard",
+    route: "/ideathon",
   },
   {
     id: 2,
     title: "STARTUP STORM",
-    subtitle: "Workshop",
+    subtitle: "Best Manager",
     image: workshopImg,
     route: "/best-manager",
   },
   {
     id: 3,
     title: "FOUNDERS TALK",
-    subtitle: "Panel Discussion",
+    subtitle: "Escape Room",
     image: panelImg,
+    route: "/escape-room",
+  },
+  {
+    id: 4,
+    title: "FOUNDERS TALK",
+    subtitle: "Escape Room",
+    image: bizvanguard,
     route: "/escape-room",
   },
 ];
 
 const Events = () => {
+  const [paused, setPaused] = useState(false);
+
+  const handleCardClick = () => {
+    setPaused(true); // stop animation
+  };
+
 
   return (
     <>
@@ -41,18 +55,22 @@ const Events = () => {
       </PopIn>
 
       {/* Events */}
-      <div className="events-container">
-        {eventsData.map((event, index) => (
-          <PopIn key={event.id} delay={index * 150}>
-            <EventCard
-              image={event.image}
-              title={event.title}
-              subtitle={event.subtitle}
-              route={event.route}
-            />
-          </PopIn>
-        ))}
+      <div className="events-slider">
+        <div className={`events-track ${paused ? "paused" : ""}`}>
+          {[...eventsData, ...eventsData].map((event, index) => (
+            <div key={index} onClick={handleCardClick}>
+              <EventCard
+                image={event.image}
+                title={event.title}
+                subtitle={event.subtitle}
+                route={event.route}
+              />
+            </div>
+          ))}
+        </div>
       </div>
+
+
     </>
   );
 };

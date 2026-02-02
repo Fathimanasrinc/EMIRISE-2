@@ -1,0 +1,71 @@
+.scene {
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Bat container */
+.bat {
+  position: absolute;
+  top: 120px;
+  left: -200px;
+  width: 200px;
+  height: 120px;
+  animation: fly 6s linear infinite;
+}
+
+/* Body */
+.body {
+  position: absolute;
+  width: 90px;
+  left: 55px;
+  top: 25px;
+  z-index: 2;
+  animation: bodyFloat 0.6s ease-in-out infinite;
+}
+
+/* Wings */
+.wing {
+  position: absolute;
+  width: 100px;
+  top: 15px;
+  animation: flap 0.35s ease-in-out infinite;
+}
+
+/* Left wing */
+.left {
+  left: 0;
+  transform-origin: right center;
+}
+
+/* Right wing */
+.right {
+  right: 0;
+  transform-origin: left center;
+}
+
+/* Wing flapping */
+@keyframes flap {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(25deg); }
+}
+
+/* Body floating */
+@keyframes bodyFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+/* Flying motion */
+@keyframes fly {
+  0% {
+    transform: translateX(-250px) translateY(0);
+  }
+  50% {
+    transform: translateX(50vw) translateY(-40px);
+  }
+  100% {
+    transform: translateX(110vw) translateY(10px);
+  }
+}

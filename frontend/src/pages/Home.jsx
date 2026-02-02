@@ -1,7 +1,7 @@
 import React from "react";
 import PopIn from "../components/PopIn"; // adjust path if needed
 import "../styles/Home.css";
-import EMIRISE from "../assets/EMIRISE.png";
+import EMIRISE from "../assets/EMIRISE 1.png";
 import Footersection from "../components/Footersection";
 import AnimatedDivider from "../components/AnimatedDivider";
 import Countdown from "../components/Countdown";
@@ -31,8 +31,8 @@ const Home = () => {
       </PopIn>
       <Countdown/>
       <AnimatedDivider/>
-      <Events/>
       <About/>
+      <Events/>
 
     </div>
   );

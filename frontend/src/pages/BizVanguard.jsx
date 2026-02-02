@@ -3,6 +3,7 @@ import batman from "../assets/batbizHd.png";
 import bizvanguard from "../assets/bizvanguardHd.png";
 import fee from "../assets/priceHd.png";
 import bat from "../assets/batHD.png";
+import Bat from "../components/Bat";
 
 
 const BizVanguard = () => {
@@ -46,7 +47,7 @@ const BizVanguard = () => {
       <div className="rules">
         <h1 className="rules-heading">EVENTS RULES AND GUIDLINES</h1>
          <div className="bat-wrapper">
-           <img className="bat" src={bat} alt="bat"/>
+           <Bat/>
          </div>
         <div className="rules-card">
         <div className="rule1">open to all undergraduate and postgraduate students with a valid college ID</div>
