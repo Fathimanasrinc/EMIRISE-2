@@ -29,7 +29,6 @@ const Home = () => {
           className="home-image"
         />
       </PopIn>
-      <Footersection/>
       <Countdown/>
       <AnimatedDivider/>
       <Events/>

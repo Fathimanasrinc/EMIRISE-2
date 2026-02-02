@@ -3,7 +3,7 @@ import EventCard from "./EventCard";
 import PopIn from "./PopIn"; // 👈 add this
 import "./event.css";
 
-import ideathonImg from "../assets/ideathon.png";
+import ideathonImg from "../assets/ideathonhdhd.png";
 import workshopImg from "../assets/bestmanagerhd.png";
 import panelImg from "../assets/escaperoobatmanhd.png";
 
