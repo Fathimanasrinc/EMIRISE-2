@@ -7,8 +7,13 @@ import AnimatedDivider from "../components/AnimatedDivider";
 import Countdown from "../components/Countdown";
 import Events from "../components/Events";
 import About from "../components/About";
+import ContactPage from "./ContactPage";
 
 const Home = () => {
+   const coordinators = [
+    { name: "Fida Shirin", phone: "6075304210" },
+    { name: "Mehrin", phone: "3067453012" },
+  ];
   return (
     <div className="home-container">
       
@@ -33,6 +38,7 @@ const Home = () => {
       <AnimatedDivider/>
       <About/>
       <Events/>
+      <ContactPage coordinators={coordinators} />
 
     </div>
   );

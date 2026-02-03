@@ -2,12 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./EventCard.css";
 
-const EventCard = ({ image, title, subtitle, route }) => {
+const EventCard = ({ event }) => {
   const navigate = useNavigate();
+
+  const {  image, title, subtitle, route } = event;
 
   return (
     <div className="event-card">
-
       <div className="event-image-wrapper">
         <img src={image} alt={title} className="event-image" />
       </div>
@@ -20,15 +21,13 @@ const EventCard = ({ image, title, subtitle, route }) => {
       {/* Arrow click only */}
       <div
         className="arrow"
-        onClick={(e) => {
-          e.stopPropagation();
-          navigate(route);
-        }}
+            onClick={(e) => {
+  e.stopPropagation();
+  navigate(route, { state: { event } });
+}}
       >
         ➜
       </div>
-
-
     </div>
   );
 };

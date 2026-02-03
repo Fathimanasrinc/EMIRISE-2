@@ -1,0 +1,112 @@
+/* ================== HOME CONTAINER THEME FOR CONTACT PAGE ================== */
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 20px;
+  
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.88), rgb(13, 1, 1)),
+    url("../assets/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-color: #320505;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ================== CONTACT TITLE ================== */
+.contact-title {
+  font-size: clamp(36px, 6vw, 60px);
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #8B0000;
+}
+
+/* ================== COORDINATORS ================== */
+.coordinators {
+  width: 100%;
+  float: left;
+  max-width: 800px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.coordinators h4 {
+  font-size: clamp(18px, 3vw, 28px);
+  margin-bottom: 20px;
+  color: #ff4d4d; /* lighter red accent */
+}
+
+.coordinators p {
+  font-size: clamp(14px, 2vw, 18px);
+  margin: 8px 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.coordinators p:hover {
+  color: #ff0000; /* hover red */
+  transform: scale(1.05);
+}
+
+/* ================== CONTACT CONTENT ================== */
+.contact-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ================== IMAGES ================== */
+.map-image, .batman-image {
+  width: 100%;
+  max-width: 580px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* ================== MOBILE RESPONSIVE ================== */
+@media screen and (max-width: 768px) {
+  .contact-title {
+    font-size: clamp(28px, 5vw, 40px);
+  }
+
+  .coordinators h4 {
+    font-size: clamp(16px, 3vw, 24px);
+  }
+
+  .coordinators p {
+    font-size: clamp(12px, 2vw, 16px);
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-image, .batman-image {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-title {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+}

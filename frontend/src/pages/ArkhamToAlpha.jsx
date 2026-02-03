@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import EventPage from "./EventPage";
 
-const BizVanguard = () => {
+const ArkhamToAlpha = () => {
   const location = useLocation();
   const { event } = location.state || {};
 
@@ -14,7 +14,6 @@ const BizVanguard = () => {
     <EventPage
       titleImage={event.titleImage}
       heroBg={event.heroBg}
-      
       characterImg={event.characterImg}
         priceTag={event.priceTag}
         link={event.link}
@@ -26,4 +25,4 @@ const BizVanguard = () => {
   );
 };
 
-export default BizVanguard;
+export default ArkhamToAlpha;

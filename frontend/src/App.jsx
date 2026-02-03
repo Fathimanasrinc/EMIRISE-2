@@ -1,20 +1,20 @@
-import './App.css';
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import Home from './pages/Home';
-import BizVanguard from './pages/BizVanguard';
-import Ideathon from './pages/Ideathon';
-import EscapeRoom from './pages/EscapeRoom';
-import BestManager from './pages/BestManager';
+import Home from "./pages/Home";
+import BizVanguard from "./pages/BizVanguard";
+import EscapeGotham from "./pages/EscapeGotham";
+import ArkhamToAlpha from "./pages/ArkhamToAlpha";
+import BatBoss from "./pages/BatBoss";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/biz-vanguard" element={<BizVanguard />} />
-      <Route path="/ideathon" element={<Ideathon />} />
-      <Route path="/escape-room" element={<EscapeRoom />} />
-      <Route path="/best-manager" element={<BestManager />} />
+      <Route path="/events/bizvanguard" element={<BizVanguard />} />
+      <Route path="/events/escape-gotham" element={<EscapeGotham />} />
+      <Route path="/events/arkham-to-alpha" element={<ArkhamToAlpha />} />
+      <Route path="/events/batboss" element={<BatBoss />} />
     </Routes>
   );
 }
