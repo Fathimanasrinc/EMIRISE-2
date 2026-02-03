@@ -134,7 +134,8 @@
 
 /* LEFT CONTENT */
 .content {
-  width: 70%;
+  margin-top: 150px;
+  width: 100%;
   color: #fff;
   
   
@@ -146,8 +147,8 @@
 }
 .gotham {
   width: 1000px;
-  height: 450px;
-  margin: 0px 110px ;
+  height: 400px;
+  margin: 0px 10px ;
   top: 0px;
   position: absolute;
 
@@ -155,7 +156,7 @@
 
 .date {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   opacity: 0.9;
   
 }
@@ -201,22 +202,16 @@
 }
 
 .escapebatman {
-  width: 800px;
-  height:540px;
-  margin-top: -230px;
+ width: 720px;
+    height: 470px;
   right: -60px;
- 
+  top: -160px;
+  bottom: 0px;
   position: absolute;
   
 }
 
 /* PRICE BADGE */
-.fee {
-  position: absolute;
-  top: 150px;
-  right: -80px;
-  width: 200px;
-}
 
 
 .rules-heading{
@@ -243,7 +238,7 @@
 .rule1{
   box-sizing: border-box;
   width: 400px;
-  height: 100px;
+  height: 50px;
   background-color:rgb(158, 110, 114);
   position: relative;
   margin-top: 0px;
