@@ -1,5 +1,5 @@
 import React from "react";
-import PopIn from "../components/PopIn"; // adjust path if needed
+import PopIn from "../components/PopIn"; 
 import "../styles/Home.css";
 import EMIRISE from "../assets/EMIRISE 1.png";
 import Footersection from "../components/Footersection";
@@ -8,38 +8,54 @@ import Countdown from "../components/Countdown";
 import Events from "../components/Events";
 import About from "../components/About";
 import ContactPage from "./ContactPage";
+import Footer from "./Footer";
 
 const Home = () => {
-   const coordinators = [
-    { name: "Fida Shirin", phone: "6075304210" },
-    { name: "Mehrin", phone: "3067453012" },
+  const coordinators = [
+    { name: "Fida Shirin", phone: "8304912635" },
+    { name: "Mehrin", phone: "9880021044" },
   ];
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="home-container">
       
       {/* Navbar */}
       <nav className="navbar">
         <ul className="nav-links">
-          <li>HOME</li>
-          <li>CONTACT</li>
-          <li>EVENTS</li>
+          <li onClick={() => scrollToSection("home")}>HOME</li>
+          <li onClick={() => scrollToSection("contact")}>CONTACT</li>
+          <li onClick={() => scrollToSection("events")}>EVENTS</li>
         </ul>
       </nav>
 
-      {/* Image with pop-in animation */}
-      <PopIn delay={200}>
-        <img
-          src={EMIRISE}   // your image path
-          alt="Home"
-          className="home-image"
-        />
-      </PopIn>
+      {/* Hero Section */}
+      <div id="home">
+        <PopIn delay={200}>
+          <img src={EMIRISE} alt="Home" className="home-image" />
+        </PopIn>
+      </div>
+
+      {/* Other Sections */}
       <Countdown/>
       <AnimatedDivider/>
-      <About/>
-      <Events/>
-      <ContactPage coordinators={coordinators} />
+      <div id="about">
+        <About/>
+      </div>
+      <div id="events">
+        <Events/>
+      </div>
+      <div id="contact">
+        <ContactPage coordinators={coordinators} />
+      </div>
 
+      <Footer/>
     </div>
   );
 };

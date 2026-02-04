@@ -2,6 +2,7 @@
   justify-content: center;
   flex-wrap: wrap;
   display: grid;
+  overflow: hidden;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 55px;
   justify-items: center;
@@ -20,7 +21,7 @@
 
 .events-slider {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   padding: 20px 0;
 }

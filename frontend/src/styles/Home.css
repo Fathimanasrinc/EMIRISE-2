@@ -2,7 +2,7 @@
 .home-container {
   min-height: 100vh;
   padding-top: 10px;
-
+overflow-x:hidden ;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.88), rgb(13, 1, 1)),
     url("../assets/bg.jpeg");
@@ -41,11 +41,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+position: fixed;
+z-index: 1000;
   width: 90%;
   max-width: 900px;
   padding: 20px;
-
+height: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   height: auto;
 }

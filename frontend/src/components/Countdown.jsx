@@ -41,8 +41,7 @@ const Countdown = () => {
       if (diff <= 0) return clearInterval(timer);
 
       setTimeLeft({
-        months: Math.floor(diff / (1000 * 60 * 60 * 24 * 30)),
-        days: Math.floor((diff / (1000 * 60 * 60 * 24)) % 30),
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
         hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((diff / (1000 * 60)) % 60),
         seconds: Math.floor((diff / 1000) % 60),
@@ -54,11 +53,10 @@ const Countdown = () => {
 
   return (
     <div className="countdown-container">
-      <TimeBox value={timeLeft.months} label="MONTHS" delay={0} />
-      <TimeBox value={timeLeft.days} label="DAYS" delay={100} />
-      <TimeBox value={timeLeft.hours} label="HOURS" delay={200} />
-      <TimeBox value={timeLeft.minutes} label="MINUTES" delay={300} />
-      <TimeBox value={timeLeft.seconds} label="SECONDS" delay={400} />
+      <TimeBox value={timeLeft.days} label="DAYS" delay={0} />
+      <TimeBox value={timeLeft.hours} label="HOURS" delay={100} />
+      <TimeBox value={timeLeft.minutes} label="MINUTES" delay={200} />
+      <TimeBox value={timeLeft.seconds} label="SECONDS" delay={300} />
     </div>
   );
 };
