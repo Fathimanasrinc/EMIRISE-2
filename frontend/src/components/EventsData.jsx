@@ -48,10 +48,15 @@ const EventsData = [
             thinking, and consistency across all rounds earns
             the title of Biz Quiz Champion.`,
     rules: [
-      "Team of 2 members",
-      "Multiple quiz rounds",
-      "No electronic gadgets allowed",
-      "Quiz master's decision is final",
+      "Open to all undergraduate and postgraduate students with a valid college ID",
+      "Teams with members from different colleges are permitted",
+      "Each team shall consist of a maximum of two members ",
+      "Multiple teams from the same college are allowed ",
+      "Participants must arrive 15 minutes before the event start time",
+      "Electronic gadgets are strictly prohibited during the quiz",
+      "The quiz masters decision will be final and binding",
+      "A time limit will be imposed for each question in specific rounds ",
+      "Teams found violating any rules will be disqualified immediately"
     ],
   },
   {
@@ -76,10 +81,15 @@ fastest and most efficient team emerging as the Escape Room Champions.
 `,
 
     rules: [
-      "Team size: 3–5 members",
-      "Time-based challenge",
-      "No damage to clues",
-      "Cheating leads to disqualification",
+      "Each team may consist of a maximum of 4 members ",
+      "Time limit of the game will be given on the spot",
+      "Time limit will be strictly followed. No extra time will be given",
+      "Time starts once the door is closed",
+      "Participants must not damage any properties, locks, room items ",
+      "Use of mobile phones , smart devices or external help is strictly prohibited inside the room",
+      "All clues are within the room. Do not force open any locked items",
+      "Any form of misconduct or rule violation may lead to immediate disqualification ",
+      "The decision of the event coordinators will be final and binding",
     ],
   },
   {
@@ -132,10 +142,16 @@ fastest and most efficient team emerging as the Escape Room Champions.
                manage situations effectively, and perform under pressure, with the most 
                confident and consistent performer earning the title of Best Manager.`,
     rules: [
-      "Individual participation only",
-      "Multiple elimination rounds",
-      "Time-bound tasks",
-      "Judges’ decision will be final",
+      "The is an individual event",
+      "The Registration fee is Rs. 200 per head.",
+      "Participants should equip themselves with laptops, mobile phones and internet connection",
+      "Use of mobile phones or electronic devices during the event is strictly prohibited unless permitted",
+      "Participants must maintain professional conduct throughout the event.",
+      "Any form of malpractice, misbehavior, or rule violation will lead to immediate disqualification.",
+      "Participants must follow the instructions given by the coordinators and judges.",
+      "The judges’ decision will be final and binding.",
+      "The event schedule and rules are subject to change at the discretion of the organizing committee.",
+      "Any queries or clarifications about any round must be addressed before the commencement of the respective round.",
     ],
   },
 ];
