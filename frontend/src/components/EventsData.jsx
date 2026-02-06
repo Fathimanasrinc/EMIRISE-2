@@ -19,7 +19,7 @@ import mangerImg from "../assets/bestmanagerhd.png";
 import escapeImg from "../assets/escaperoobatmanhd.png";
 import bizvanguard from "../assets/batbizHd.png";
 
-import priceBiz from "../assets/7k.png";
+import priceBiz from "../assets/10k.png";
 import priceEscape from "../assets/7k.png";
 import priceIdeathon from "../assets/12k.png";
 import priceBatboss from "../assets/10k.png";
