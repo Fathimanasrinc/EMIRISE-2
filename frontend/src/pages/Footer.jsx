@@ -11,10 +11,7 @@ const Footer = () => {
         <p className="footer-tags">
           IDEA | INNOVATION | START-UP | ENTREPRENEURSHIP INNOVATION
         </p>
-      
-        <p className="footer-credits">
-          Crafted by Muhsina, Nasrin, Mehrin, Fidha Shirin, Nafila
-        </p>
+    
       </div>
     </footer>
   );

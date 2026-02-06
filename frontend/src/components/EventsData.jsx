@@ -38,7 +38,7 @@ const EventsData = [
     heroBg: bizBg,
     link:"https://tinyurl.com/emirise-bizquiz",
     characterImg: bizMan,
-    date: "10 February 2025",
+    date: "10 February 2026",
     description:
       `The Biz Quiz event evaluates participants on their
             knowledge of business concepts, current affairs,
@@ -71,7 +71,7 @@ const EventsData = [
     link:"https://tinyurl.com/mr3kccz2",
     priceTag:priceEscape,
     characterImg: escapeMan,
-    date: "11 February 2025",
+    date: "10 February 2026",
    description: `
 The Escape Room event challenges participants to solve puzzles,
 crack clues, and think critically under time pressure to escape
@@ -104,7 +104,7 @@ fastest and most efficient team emerging as the Escape Room Champions.
     link:"https://tinyurl.com/emirise-ideathon",
     priceTag:priceIdeathon,
     characterImg: arkhamMan,
-    date: "12 February 2025",
+    date: "10 February 2026",
     description:
       `The Ideathon event challenges participants to 
             present innovative ideas and practical solutions
@@ -134,7 +134,7 @@ fastest and most efficient team emerging as the Escape Room Champions.
     link:"https://tinyurl.com/3a4j9k9t",
     priceTag:priceBatboss,
     characterImg: batman,
-    date: "13 February 2025",
+    date: "10 February 2026",
     description:
       ` The Best Manager event assesses participants on their leadership abilities,
              decision-making skills, problem-solving approach, and strategic thinking
