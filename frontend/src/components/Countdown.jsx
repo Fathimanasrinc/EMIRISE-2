@@ -30,7 +30,7 @@ const TimeBox = ({ value, label, delay = 0 }) => {
 };
 
 const Countdown = () => {
-  const eventDate = new Date("February 9, 2026 00:00:00").getTime();
+  const eventDate = new Date("February 10, 2026 00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {

@@ -245,16 +245,16 @@ img {
   .hero-right img:first-child {
     height: auto;
     max-height: 280px;
-    margin-bottom: -86px;
+    margin-bottom: -120px;
   }
 .batboss img:first-child{
   margin-bottom : -25px;
 }
 .escape-gotham img:first-child{
-  margin-bottom :-57px
+  margin-bottom :-70px
 }
 .bizvanguard img:first-child{
-          margin-bottom: -22px;
+          margin-bottom: -38px;
         margin-left: 126px;
 
 }

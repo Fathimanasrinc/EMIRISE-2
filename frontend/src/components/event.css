@@ -61,3 +61,45 @@
 .events-track:hover {
   animation-play-state: paused;
 }
+/* ================= MOBILE SLIDER ================= */
+@media (max-width: 768px) {
+  .events-container {
+    display: flex;                 /* switch from grid */
+    gap: 20px;
+    overflow-x: auto;              /* enable horizontal scroll */
+    scroll-snap-type: x mandatory; /* snapping effect */
+    padding: 10px 16px;
+  }
+
+  .event-card {
+    min-width: 85%;                /* one card per swipe */
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  /* Hide scrollbar */
+  .events-container::-webkit-scrollbar {
+    display: none;
+  }
+  .events-container {
+    scrollbar-width: none;
+  }
+}
+@media (max-width: 768px) {
+  .events-container {
+    animation: mobileSlide 15s linear infinite;
+  }
+
+  .events-container:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes mobileSlide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
