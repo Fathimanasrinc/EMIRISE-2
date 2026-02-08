@@ -89,8 +89,11 @@ img {
   object-fit: contain;
   margin-bottom: -191px;
 }
-.hero-boss img{
+.batboss img{
   margin-bottom:-157px
+}
+.bizvanguard img{
+  margin-bottom:-150px
 }
 
 /* ================= PRICE TAG (BETWEEN SECTIONS) ================= */
@@ -244,8 +247,16 @@ img {
     max-height: 280px;
     margin-bottom: -86px;
   }
-.hero-boss img:first-child{
+.batboss img:first-child{
   margin-bottom : -25px;
+}
+.escape-gotham img:first-child{
+  margin-bottom :-57px
+}
+.bizvanguard img:first-child{
+          margin-bottom: -22px;
+        margin-left: 126px;
+
 }
   .price-tag {
     width: 120px;

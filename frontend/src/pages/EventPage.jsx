@@ -39,7 +39,7 @@ const EventPage = ({
     </div>
 
     {characterImg && (
-      <div className={id==="batboss" ? "  hero-boss hero-right": "hero-right"}
+      <div className={ `${id} hero-right` }
     >
         <img src={characterImg} alt="Character" />
       </div>
